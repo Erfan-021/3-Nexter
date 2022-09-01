@@ -1,0 +1,9 @@
+.story {
+  &__pictures {
+    grid-column: sidebar-end / col-end 4;
+  }
+
+  &__content {
+    grid-column: col-start 5 / full-end;
+  }
+}
