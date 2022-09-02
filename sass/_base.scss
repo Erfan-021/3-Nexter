@@ -14,6 +14,22 @@ $color-grey-dark-2: #6d5d4b;
 $font-primary: "Nunito", sans-serif;
 $font-display: "Josefin Sans", sans-serif;
 
+.mb-sm {
+  margin-bottom: 2rem;
+}
+
+.mb-md {
+  margin-bottom: 3rem;
+}
+
+.mb-big {
+  margin-bottom: 4rem;
+}
+
+.mb-huge {
+  margin-bottom: 8rem;
+}
+
 *,
 *::before,
 *::after {
@@ -45,4 +61,24 @@ body {
       [col-start] minmax(min-content, 14rem) [col-end]
     )
     [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.btn {
+  display: inline-block;
+  font-family: $font-display;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+  border: none;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(to left, $color-primary, $color-primary-dark);
+  }
+
+  &:active {
+    background-image: radial-gradient($color-primary, $color-primary-dark);
+  }
 }
