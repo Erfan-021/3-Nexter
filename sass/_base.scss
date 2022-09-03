@@ -30,6 +30,11 @@ $font-display: "Josefin Sans", sans-serif;
   margin-bottom: 8rem;
 }
 
+::selection {
+  background-color: $color-primary;
+  color: #fff;
+}
+
 *,
 *::before,
 *::after {
